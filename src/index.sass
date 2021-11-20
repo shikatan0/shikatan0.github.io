@@ -1,0 +1,85 @@
+*
+    box-sizing: border-box
+
+html
+    font-size  : 16px
+    font-family: monospace
+body
+    margin : 0
+    padding: 0 8px
+
+.header
+    padding      : 8px 4px
+    border-bottom: 1px solid #000
+    margin-bottom: 16px
+.title_frame
+    display        : inline-flex
+    flex-direction : column
+    align-items    : flex-end
+.title
+    margin   : 0 0 4px
+    display  : inline-block
+    font-size: 24px
+.about
+    display: inline-block
+.main
+    padding: 0 8px
+.section
+    padding      : 8px 0
+    margin-bottom: 8px
+.caption
+    font-size: 20px
+    margin   : 0 0 16px
+.links
+    display: flex
+    &>div
+        margin: 0 4px
+.product
+    margin-bottom: 8px
+    &>a
+        display      : inline-block
+        margin-bottom: 4px
+    &>div
+        font-size: 12px
+
+#languages_state
+    font-size: 12px
+#languages_table
+    width    : 100%
+    font-size: 12px
+    display  : flex
+#languages_name
+    display       : flex
+    flex-direction: column
+    margin-right  : 16px
+#languages_ratio
+    display       : flex
+    flex-direction: column
+    margin-right  : 16px
+#languages_graph
+    flex-grow     : 1
+    display       : flex
+    flex-direction: column
+
+.languages_name_item
+    height     : 24px
+    line-height: 24px
+.languages_ratio_item
+    height         : 24px
+    line-height    : 24px
+    display        : flex
+    justify-content: flex-end
+.languages_ratio_item
+    height     : 24px
+    display    : flex
+    align-items: center
+.languages_graph_bar
+    width : 100%
+    border: 1px solid #000
+.languages_graph_value
+    height          : 8px
+    background-color: #000
+    animation       : languages_graph_value 500ms ease-out 0s 1 normal none running
+@keyframes languages_graph_value
+    0%
+        width: 0%
