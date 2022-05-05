@@ -2,39 +2,28 @@ doctype html
 html(lang="ja")
     head
         meta(charset="utf-8")
-        title shikatan0.github.io
+        title shikatan’s index
         meta(name="viewport" content="width=device-width, initial-scale=1")
         style
             include ../out/index.css
         script(type="module")
             include ../out/index.js
     body
-        .header
-            .title_frame
-                .title shikatan0.github.io
-                .about shikatan’s index.
-        .main
-            .section
-                .caption Links
+        header.header
+            h1.title shikatan’s index
+        main.main
+            section.section
+                h2.caption links
                 .links
                     a(href="https://github.com/shikatan0") GitHub
                     div /
                     a(href="https://twitter.com/shikatan0") Twitter
                     div /
                     a(href="https://zenn.dev/shikatan") Zenn
-            .section
-                .caption Languages
+            section.section.languages
+                h2.caption languages
                 #languages_state Now Loading...
                 #languages_table
                     #languages_name
                     #languages_ratio
                     #languages_graph
-            .section
-                .caption Products
-                .product
-                    a(href="https://github.com/shikatan0/romaji-to-hira-js") romaji-to-hira-js
-                    div ローマ字をひらがなに変換するプログラム。
-                .product
-                    a(href="https://github.com/shikatan0/google-drive-folder-uploader") google-drive-folder-uploader
-                    div Google Driveにフォルダをアップロードするプログラム。
-
