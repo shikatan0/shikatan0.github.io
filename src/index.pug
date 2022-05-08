@@ -9,21 +9,34 @@ html(lang="ja")
         script(type="module")
             include ../out/index.js
     body
-        header.header
-            h1.title shikatan’s index
-        main.main
-            section.section
-                h2.caption links
+        header
+            h1 shikatan’s index
+        main
+            section
+                h2 links
                 .links
                     a(href="https://github.com/shikatan0") GitHub
                     div /
                     a(href="https://twitter.com/shikatan0") Twitter
                     div /
                     a(href="https://zenn.dev/shikatan") Zenn
-            section.section.languages
-                h2.caption languages
+            section
+                h2 languages
                 #languages_state Now Loading...
                 #languages_table
                     #languages_name
                     #languages_ratio
                     #languages_graph
+            section
+                h2 using
+                table
+                    tbody
+                        tr
+                            th editor
+                            td #[a(href="https://code.visualstudio.com/") Visual Studio Code]
+                        tr
+                            th shell
+                            td #[a(href="https://github.com/PowerShell/PowerShell") PowerShell]
+                        tr
+                            th font
+                            td #[a(href="https://github.com/be5invis/Sarasa-Gothic") Sarasa Gothic] (Sarasa Fixed J)
